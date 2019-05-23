@@ -28,9 +28,9 @@ before_script:
 script:
   - ./flutter/bin/flutter test
   - echo "run './flutter/bin/flutter test' command for test"
-  - echo "run './flutter/bin/flutter build apk --release' command for build adroid apk app"
-  - echo "run './flutter/bin/flutter build ios --release --no-codesign' command for build ios app"
-cache:
-  packages: true
-  directories:
-    - $HOME/.pub-cache
+  - echo "run './flutter/bin/flutter build apk --release' command to build adroid apk app"
+  - echo "run './flutter/bin/flutter build ios --release --no-codesign' command to build ios app"
+# cache:
+#   packages: true
+#   directories:
+#     - $HOME/.pub-cache
