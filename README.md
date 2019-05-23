@@ -1,8 +1,11 @@
-# flutter_example
-
+# flutter_example [![Build Status](https://travis-ci.org/daggerok/flutter-example.svg?branch=master)](https://travis-ci.org/daggerok/flutter-example)
 A Flutter application example.
 
 ## Getting Started
+
+```bash
+git clone --no-single-branch --depth=1 https://github.com/daggerok/flutter-example flutter_example
+```
 
 This project is a starting point for a Flutter application.
 
