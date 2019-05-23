@@ -1,5 +1,15 @@
 language: ruby
 rvm: 2.1
+android:
+  components:
+    - build-tools-26.0.2
+    - android-26
+    - add-on
+    - extra
+  licenses:
+    - 'android-sdk-preview-license-52d11cd2'
+    - 'android-sdk-license-.+'
+    - 'google-gdk-license-.+'
 os:
   - linux
 sudo: false
@@ -14,8 +24,9 @@ addons:
 before_script:
   - gem install fastlane
   - git clone https://github.com/flutter/flutter.git -b beta
-script:
   - ./flutter/bin/flutter doctor
+script:
+  - ./flutter/bin/flutter test
   - echo "run './flutter/bin/flutter test' command for test"
   - echo "run './flutter/bin/flutter build apk --release' command for build adroid apk app"
   - echo "run './flutter/bin/flutter build ios --release --no-codesign' command for build ios app"
